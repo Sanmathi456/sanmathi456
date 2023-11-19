@@ -1,0 +1,14 @@
+create or replace function addresses (names in varchar) return varchar
+as
+addr varchar(20);
+begin
+select (address)into addr from customers where name=names;
+return addr;
+end;
+/
+declare 
+addd varchar(100);
+begin
+addd:=addresses('abi');
+dbms_output.put_line(addd);
+end;

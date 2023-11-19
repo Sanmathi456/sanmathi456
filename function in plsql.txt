@@ -1,0 +1,7 @@
+CREATE OR REPLACE FUNCTION powers(a IN NUMBER) RETURN NUMBER 
+AS 
+  ret NUMBER; 
+BEGIN 
+  ret := a ** 2; 
+  RETURN ret; 
+END; 
