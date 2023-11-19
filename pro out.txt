@@ -1,0 +1,12 @@
+create or replace procedure out_eg(a in number , b out number)
+is
+p number;
+begin
+select acprice into p from items where item=a;
+if p is null then
+b:=0;
+else
+b:=100;
+end if;
+end out_eg;
+/

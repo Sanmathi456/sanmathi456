@@ -1,0 +1,6 @@
+create or replace procedure in_out (a in out number)
+is 
+begin
+a:=a+1;
+end in_out;
+/

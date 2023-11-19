@@ -1,0 +1,27 @@
+create  or replace procedure pro id 
+a number;
+b number;
+c number;
+d number;
+begin
+a:=&a;
+b:=&b;
+if(a>b) then
+c:=mod(a,b);
+if c=0 the
+dbms_output.put_line('GCD is' ||b);
+else
+dbms_output.put_line('gcd is ||c);
+end if;
+else
+d:=mod(b,a);
+if(d=0) then
+dbms_output.put_line('gcd is ||a);
+else
+dbms_output.put_line('gcd is ||d);
+end if;
+end if;
+end;
+/
+
+
